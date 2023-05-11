@@ -6,27 +6,27 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
 
 const projects = [
   {
-    name: "Thankful Thoughts",
+    name: "Tenacious Tracker",
     description:
-      "ThankfulThoughts is a web app that generates an appreciative sentence of something or someone you are thankful for.",
+      "Tenacious Tracker is a dynamic, single-page, web-based application that provides users with a seamless solution to manage, track, and analyze their vehicle maintenance, fuel consumption, and associated costs.",
     image: "/thankfulthoughts.png",
-    github: "https://github.com/hqasmei/thankful-thoughts",
-    link: "https://thankfulthoughts.io/",
+    github: "https://github.com/LeeAaron702/TenaciousTracker",
+    link: "https://lee-seaver.vercel.app/",
   },
   {
-    name: "PlatoIO",
-    description: "PlatoIO is a to do list app that built using the PERN stack.",
+    name: "Cruise Control",
+    description: "Cruise Control is a cutting-edge software solution designed for the vehicle service industry. It streamlines appointment scheduling, service, and technician management.",
     image: "/platoio.png",
-    github: "https://github.com/hqasmei/platoio",
-    link: "https://platoio.com/register",
+    github: "https://github.com/LeeAaron702/CruiseControl",
+    link: "https://lee-seaver.vercel.app/",
   },
   {
-    name: "Kator Family Photos",
+    name: "CarCar",
     description:
-      "Kator Family Photos is a photos and video digitization service in the LA area.",
+      "CarCar is a comprehensive dealership management system designed to streamline inventory, service center, and sales operations for automobile dealerships. ",
     image: "/familyphotos.png",
-    github: "https://github.com/hqasmei/katorfamilyphotos",
-    link: "https://katorfamilyphotos.com/",
+    github: "https://github.com/LeeAaron702/CarCar",
+    link: "https://lee-seaver.vercel.app/",
   },
 ]
 
