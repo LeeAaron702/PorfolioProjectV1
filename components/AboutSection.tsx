@@ -35,26 +35,35 @@ const AboutSection = () => {
               Get to know me!
             </h1>
             <p>
-            Hi, my name is Lee, a{" "}
-              <span className="font-bold">{"determined"}</span>,
-              <span className="font-bold">{" driven"}</span>, and
-              <span className="font-bold">{" adaptable"}</span> full-stack software developer based in Las Vegas, Nevada.
+              Hi, my name is Hosna and I am a{" "}
+              <span className="font-bold">{"highly ambitious"}</span>,
+              <span className="font-bold">{" self-motivated"}</span>, and
+              <span className="font-bold">{" driven"}</span> software engineer
+              based in Los Angeles, CA.
             </p>
             <br />
             <p>
-              Recently, I completed an Advanced Software Engineering Certificate at Hack Reactor, where I led development teams in creating user-centric applications and optimizing application performance. 
+              I graduated from California State University, Northridge in 2019
+              with a BS in Computer Engineering and have been working in the
+              field ever since.
             </p>
             <br />
             <p>
-              Prior to my coding career, I held various managerial positions where I optimized business processes, implemented innovative strategies, and improved customer satisfaction. This business experience coupled with my tech skills allows me to bring a unique perspective to software development.
+              I have a wide range of hobbies and passions that keep me busy.
+              From reading, playing sports, traveling, to making YouTube videos,
+              I am always seeking new experiences and love to keep myself
+              engaged and learning new things.
             </p>
             <br />
             <p>
-              I believe in{" "}
+              I believe that you should{" "}
               <span className="font-bold text-teal-500">
-                constant growth
+                never stop growing
               </span>{" "}
-              and I'm always excited to tackle new challenges in the technology sphere. I'm eager to use my skills to make a significant impact in a forward-thinking company.
+              and that&#39;s what I strive to do, I have a passion for
+              technology and a desire to always push the limits of what is
+              possible. I am excited to see where my career takes me and am
+              always open to new opportunities. 🙂
             </p>
           </div>
           <div className="text-center md:w-1/2 md:text-left">
@@ -72,7 +81,7 @@ const AboutSection = () => {
               })}
             </div>
             <Image
-              src="/about-image.png"
+              src="/hero-image.png"
               alt=""
               width={325}
               height={325}
