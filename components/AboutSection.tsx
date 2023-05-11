@@ -54,7 +54,7 @@ const AboutSection = () => {
               <span className="font-bold text-teal-500">
                 constant growth
               </span>{" "}
-              and I am always excited to tackle new challenges in the technology sphere. I'm eager to use my skills to make a significant impact in a forward-thinking company.
+              and I am always excited to tackle new challenges in the technology sphere. I am eager to use my skills to make a significant impact in a forward-thinking company.
 
             </p>
           </div>
