@@ -5,6 +5,23 @@ import SlideUp from "./SlideUp"
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
 
 const projects = [
+
+  {
+    name: "Ledgered",
+    description:
+      "Ledgered is a financial tracking application that provides an intuitive interface for tracking transactions, products, and key performance indicators (KPIs). This application is built with a robust technology stack known as MERN: MongoDB, Express, React, and Node.",
+    image: "/Ledgered.gif",
+    github: "https://github.com/LeeAaron702/Ledgered",
+    link: "https://github.com/LeeAaron702/Ledgered",
+  },
+  {
+    name: "Atmosphere",
+    description:
+      "Atmosphere is a web-based application that allows users to get real-time weather data for any city around the world.",
+    image: "/Atmosphere.gif",
+    github: "https://github.com/LeeAaron702/Atmosphere",
+    link: "https://github.com/LeeAaron702/Atmosphere",
+  },
   {
     name: "Swift Summary ",
     description:
