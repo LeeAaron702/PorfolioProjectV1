@@ -11,14 +11,14 @@ const projects = [
       "Tenacious Tracker is a dynamic, single-page, web-based application that provides users with a seamless solution to manage, track, and analyze their vehicle maintenance, fuel consumption, and associated costs.",
     image: "/TenaciousTracker.gif",
     github: "https://github.com/LeeAaron702/TenaciousTracker",
-    link: "https://lee-seaver.vercel.app/",
+    link: "https://github.com/LeeAaron702/TenaciousTracker",
   },
   {
     name: "Cruise Control",
     description: "Cruise Control is a cutting-edge software solution designed for the vehicle service industry. It streamlines appointment scheduling, service, and technician management.",
     image: "/CruiseControl.gif",
     github: "https://github.com/LeeAaron702/CruiseControl",
-    link: "https://lee-seaver.vercel.app/",
+    link: "https://github.com/LeeAaron702/CruiseControl",
   },
   {
     name: "CarCar",
@@ -26,7 +26,7 @@ const projects = [
       "CarCar is a comprehensive dealership management system designed to streamline inventory, service center, and sales operations for automobile dealerships. ",
     image: "/carcar.gif",
     github: "https://github.com/LeeAaron702/CarCar",
-    link: "https://lee-seaver.vercel.app/",
+    link: "https://github.com/LeeAaron702/CarCar",
   },
 ]
 
