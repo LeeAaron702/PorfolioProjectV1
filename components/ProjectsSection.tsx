@@ -6,6 +6,14 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
 
 const projects = [
   {
+    name: "Swift Summary ",
+    description:
+      "Swift Summary is a tool that utilizes OpenAI ChatGPT to summarize article links and parse PDF data.",
+    image: "/SwiftSummary.gif",
+    github: "https://github.com/LeeAaron702/AiSummarizer",
+    link: "https://swiftsummary.netlify.app/",
+  },
+  {
     name: "Tenacious Tracker",
     description:
       "Tenacious Tracker is a dynamic, single-page, web-based application that provides users with a seamless solution to manage, track, and analyze their vehicle maintenance, fuel consumption, and associated costs.",
