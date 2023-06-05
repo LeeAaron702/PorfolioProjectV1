@@ -9,14 +9,14 @@ const projects = [
     name: "Tenacious Tracker",
     description:
       "Tenacious Tracker is a dynamic, single-page, web-based application that provides users with a seamless solution to manage, track, and analyze their vehicle maintenance, fuel consumption, and associated costs.",
-    image: "/thankfulthoughts.png",
+    image: "/TenaciousTracker.gif",
     github: "https://github.com/LeeAaron702/TenaciousTracker",
     link: "https://lee-seaver.vercel.app/",
   },
   {
     name: "Cruise Control",
     description: "Cruise Control is a cutting-edge software solution designed for the vehicle service industry. It streamlines appointment scheduling, service, and technician management.",
-    image: "/platoio.png",
+    image: "/CruiseControl.gif",
     github: "https://github.com/LeeAaron702/CruiseControl",
     link: "https://lee-seaver.vercel.app/",
   },
