@@ -24,7 +24,7 @@ const projects = [
     name: "CarCar",
     description:
       "CarCar is a comprehensive dealership management system designed to streamline inventory, service center, and sales operations for automobile dealerships. ",
-    image: "/familyphotos.png",
+    image: "/carcar.gif",
     github: "https://github.com/LeeAaron702/CarCar",
     link: "https://lee-seaver.vercel.app/",
   },
