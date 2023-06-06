@@ -7,9 +7,17 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
 const projects = [
 
   {
+    name: "LiLL-E Image Generator",
+    description:
+      "LiLL-E Image Generator is a full-stack web application that leverages the power of OpenAi DALL-E to generate images based on provided prompts. ",
+    image: "/LiLL-E.gif",
+    github: "https://github.com/LeeAaron702/LiLL-E_ImageGenerator",
+    link: "https://lill-e.tech/",
+  },
+  {
     name: "Ledgered",
     description:
-      "Ledgered is a financial tracking application that provides an intuitive interface for tracking transactions, products, and key performance indicators (KPIs). This application is built with a robust technology stack known as MERN: MongoDB, Express, React, and Node.",
+      "Ledgered is a financial tracking application that provides an intuitive interface for tracking transactions, products, and key performance indicators (KPIs).",
     image: "/Ledgered.gif",
     github: "https://github.com/LeeAaron702/Ledgered",
     link: "https://github.com/LeeAaron702/Ledgered",
