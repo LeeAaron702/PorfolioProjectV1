@@ -74,13 +74,13 @@ const AboutSection = () => {
                   </p>
                 )
               })}
-            </div>
+            </div >
             <Image
               src={"/about-image.png"}
               alt=""
               width={600}
               height={600}
-              className="hidden md:block md:relative md:bottom-4 md:left-2 md:z-0"
+              className="hidden mt-8 md:block md:relative md:bottom-4 md:left-2 md:z-0"
             />
           </div>
         </div>
