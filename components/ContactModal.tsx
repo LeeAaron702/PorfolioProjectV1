@@ -133,7 +133,7 @@ const ContactModal: React.FC<Props> = ({ closeModal }) => {
               type="tel"
               id="phone"
               name="phone"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            //   pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
               className={`shadow appearance-none border rounded w-full py-2 px-3 ${
                 isDark
                   ? "text-neutral-100 bg-sky-850"
