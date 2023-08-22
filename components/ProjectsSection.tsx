@@ -80,7 +80,6 @@ const ProjectsSection = () => {
     <section id="projects">
       <h1 className="my-10 text-center font-bold text-4xl">
         Projects
-        <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
       </h1>
       <p className="my-10 text-center font-bold text-2xl">
         Please click to expand!
@@ -88,6 +87,7 @@ const ProjectsSection = () => {
       <p className="text-center text-sm">
         Please give GIFs a moment to load.
       </p>
+        <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
 
       <div className="flex flex-col space-y-28">
         {projects.map((project, idx) => (
