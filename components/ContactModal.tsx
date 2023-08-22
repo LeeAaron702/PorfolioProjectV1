@@ -11,11 +11,40 @@ const ContactModal: React.FC<Props> = ({ closeModal }) => {
 
   const isDark = currentTheme === 'dark';
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
-    // Gather form data and send it to the backend or EmailJS or similar service
-
+  
+    // Gather form data
+    const formData = {
+      name: e.currentTarget.name.value,
+      email: e.currentTarget.email.value,
+      message: e.currentTarget.message.value
+    };
+  
+    // Send data to Vercel serverless function
+    try {
+      const response = await fetch('/api/sendToDiscord', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+  
+      if (response.ok) {
+        // Handle success - e.g., show a success message, reset the form, etc.
+        alert("Message sent successfully!");
+        e.currentTarget.reset();
+      } else {
+        // Handle error - e.g., show an error message to the user
+        const errorData = await response.json();
+        alert(`Failed to send message: ${errorData.error || "Unknown error occurred"}`);
+      }
+    } catch (error) {
+      // Handle fetch error - e.g., show an error message to the user
+      alert(`Error: ${error.message}`);
+    }
+  
     closeModal();
   }
 
