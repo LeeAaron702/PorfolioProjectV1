@@ -14,11 +14,13 @@ const ContactModal: React.FC<Props> = ({ closeModal }) => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
   
+    const form = e.currentTarget;
+
     // Gather form data
     const formData = {
-      name: e.currentTarget.name.value,
-      email: e.currentTarget.email.value,
-      message: e.currentTarget.message.value
+      name: (form.elements.namedItem("name") as HTMLInputElement).value,
+      email: (form.elements.namedItem("email") as HTMLInputElement).value,
+      message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
     };
   
     // Send data to Vercel serverless function

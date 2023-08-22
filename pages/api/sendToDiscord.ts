@@ -2,7 +2,7 @@
 import { VercelRequest, VercelResponse } from '@vercel/node';
 import axios from 'axios';
 
-export default async (req: VercelRequest, res: VercelResponse) => {
+const sendToDiscord = async (req: VercelRequest, res: VercelResponse) => {
   if (req.method !== 'POST') {
     return res.status(405).end();
   }
@@ -22,3 +22,5 @@ export default async (req: VercelRequest, res: VercelResponse) => {
     res.status(500).send('Error sending message to Discord');
   }
 };
+
+export default sendToDiscord;
