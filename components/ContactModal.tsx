@@ -42,11 +42,16 @@ const ContactModal: React.FC<Props> = ({ closeModal }) => {
         const errorData = await response.json();
         alert(`Failed to send message: ${errorData.error || "Unknown error occurred"}`);
       }
+      try {
+        // ... your async code here
     } catch (error) {
-      // Handle fetch error - e.g., show an error message to the user
-      alert(`Error: ${error.message}`);
+        if (error instanceof Error) {
+            alert(`Error: ${error.message}`);
+        } else {
+            alert(`An unknown error occurred.`);
+        }
     }
-  
+    
     closeModal();
   }
 
