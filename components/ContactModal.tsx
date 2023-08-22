@@ -34,8 +34,9 @@ const ContactModal: React.FC<Props> = ({ closeModal }) => {
         });
     
         if (response.ok) {
-          alert("Message sent successfully!");
+ 
           e.currentTarget.reset();
+          closeModal();
         } else {
           const errorData = await response.json();
           alert(`Failed to send message: ${errorData.error || "Unknown error occurred"}`);
@@ -49,7 +50,7 @@ const ContactModal: React.FC<Props> = ({ closeModal }) => {
       }
       closeModal();
     }
-    
+
     return (
     <div className={`fixed top-0 left-0 w-full h-full ${isDark ? "bg-gray-900" : "bg-gray-100"} bg-opacity-50 flex justify-center items-center`}>
       <div className={`p-8 rounded-md w-full max-w-md ${isDark ? "bg-sky-950" : "bg-white"}`}>
