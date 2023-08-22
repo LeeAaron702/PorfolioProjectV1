@@ -53,19 +53,19 @@ const AboutSection = () => {
             </p>
             <br />
             <p>
-              Prior to my coding career, I held various managerial positions
-              where I optimized business processes, implemented innovative
-              strategies, and improved customer satisfaction. This business
-              experience coupled with my tech skills allows me to bring a unique
-              perspective to software development.
+              Before embracing the world of coding, various managerial roles
+              were undertaken, optimizing business processes, rolling out
+              innovative strategies, and elevating customer satisfaction. Such a
+              blend of business experience with technical expertise offers a
+              fresh perspective on software development.
             </p>
             <br />
             <p>
-              I believe in{" "}
+              Beliving in{" "}
               <span className="font-bold text-teal-500">constant growth</span>{" "}
-              and I am always excited to tackle new challenges in the technology
-              sphere. I am eager to use my skills to make a significant impact
-              in a forward-thinking company.
+              and with an unwavering enthusiasm for new challenges in the tech
+              realm, there's a steadfast commitment to drive innovation and
+              contribute significantly to forward-thinking companies.
             </p>
           </div>
           <div className="text-center md:w-1/2 md:text-left">
