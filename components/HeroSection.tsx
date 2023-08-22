@@ -1,9 +1,14 @@
 "use client"
-import React from 'react'
+import React, {useState} from 'react'
 import Image from 'next/image'
 import { Link } from 'react-scroll/modules'
 import { HiArrowDown } from "react-icons/hi"
+import ContactModal from './ContactModal'; 
+
 const HeroSection = () => {
+  const [modalOpen, setModalOpen] = React.useState<boolean>(false);
+
+
   return (
     <section id="home">
       <div className="flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 my-10 py-16 sm:py-32 md:py-48 md:flex-row md:space-x-4 md:text-left">
@@ -30,7 +35,12 @@ const HeroSection = () => {
             duration={500}
           >
             Projects
-          </Link>     
+          </Link>  
+          <button 
+        onClick={() => setModalOpen(true)} 
+        className="text-neutral-100 font-semibold px-6 py-3 bg-purple-600 rounded shadow hover:bg-purple-700">
+        Contact Me
+      </button>   
            </div>
         </div>
 

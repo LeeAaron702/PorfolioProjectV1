@@ -81,7 +81,7 @@ const ProjectsSection = () => {
       <h1 className="my-10 text-center font-bold text-4xl">
         Projects
       </h1>
-      <p className="my-10 text-center font-bold text-2xl">
+      <p className="text-center font-bold text-2xl">
         Please click to expand!
       </p>
       <p className="text-center text-sm">
