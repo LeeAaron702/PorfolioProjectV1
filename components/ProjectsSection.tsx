@@ -93,7 +93,7 @@ const ProjectsSection = () => {
       <div className="flex flex-col space-y-28">
         {projects.map((project, idx) => (
           <div key={idx}>
-            <SlideUp offset="-300px 0px -300px 0px">
+            <SlideUp offset="-100px 0px -100px 0px">
               <h1
                 className="text-4xl text-center font-bold mb-6 cursor-pointer"
                 onClick={() => toggleProject(idx)}

@@ -6,6 +6,8 @@ interface Props {
 }
 
 const ContactModal: React.FC<Props> = ({ closeModal }) => {
+  const [phone, setPhone] = React.useState<string>('');
+
   const { systemTheme, theme } = useTheme();
   const currentTheme = theme === "system" ? systemTheme : theme;
 
@@ -61,7 +63,7 @@ const ContactModal: React.FC<Props> = ({ closeModal }) => {
     <div
       className={`fixed top-0 left-0 w-full h-full ${
         isDark ? "bg-gray-900" : "bg-gray-100"
-      } bg-opacity-50 flex justify-center items-center`}
+      } bg-opacity-50 flex justify-center items-center z-50`}
     >
       <div
         className={`p-8 rounded-md w-full max-w-md ${
@@ -120,31 +122,51 @@ const ContactModal: React.FC<Props> = ({ closeModal }) => {
             />
           </div>
 
-          <div className="mb-4">
-            <label
-              className={`block text-sm font-bold mb-2 ${
-                isDark ? "text-neutral-100" : "text-gray-900"
-              }`}
-              htmlFor="phone"
-            >
-              Phone Number
-            </label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-            //   pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-              className={`shadow appearance-none border rounded w-full py-2 px-3 ${
-                isDark
-                  ? "text-neutral-100 bg-sky-850"
-                  : "text-gray-900 bg-white"
-              }`}
-              required
-            />
-            <small className="text-xs text-gray-500">
-              Format: 123-456-7890
-            </small>
-          </div>
+        
+<div className="mb-4">
+    <label
+      className={`block text-sm font-bold mb-2 ${
+        isDark ? "text-neutral-100" : "text-gray-900"
+      }`}
+      htmlFor="phone"
+    >
+      Phone Number
+    </label>
+    <input
+      type="tel"
+      id="phone"
+      name="phone"
+      value={phone}
+      onChange={(e) => {
+        const value = e.target.value;
+        const onlyNums = value.replace(/[^\d]/g, '');
+
+        if (onlyNums.length < 4) {
+          setPhone(onlyNums);
+        } else if (onlyNums.length < 7) {
+          setPhone(`(${onlyNums.slice(0, 3)}) ${onlyNums.slice(3)}`);
+        } else {
+          setPhone(`(${onlyNums.slice(0, 3)}) ${onlyNums.slice(3, 6)}-${onlyNums.slice(6, 10)}`);
+        }
+      }}
+      pattern="\(\d{3}\) \d{3}-\d{4}"
+      required
+      onInput={(e) => {
+        e.target.setCustomValidity('');
+        if (!e.target.validity.valid) {
+          e.target.setCustomValidity('Please use the format (123) 456-7890.');
+        }
+      }}
+      className={`shadow appearance-none border rounded w-full py-2 px-3 ${
+        isDark
+          ? "text-neutral-100 bg-sky-850"
+          : "text-gray-900 bg-white"
+      }`}
+    />
+    <small className="text-xs text-gray-500">
+      Format: (123) 456-7890
+    </small>
+</div>
 
           <div className="mb-4">
             <label

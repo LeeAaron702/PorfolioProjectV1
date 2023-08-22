@@ -7,7 +7,18 @@ import ContactModal from './ContactModal';
 
 const HeroSection = () => {
   const [modalOpen, setModalOpen] = React.useState<boolean>(false);
+  React.useEffect(() => {
+    if (modalOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
 
+    // Cleanup function to remove the style if the component is unmounted while the modal is still open
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [modalOpen]);
 
   return (
     <section id="home">
