@@ -50,12 +50,11 @@ const ContactModal: React.FC<Props> = ({ closeModal }) => {
         } else {
             alert(`An unknown error occurred.`);
         }
-    }
     
     closeModal();
   }
 
-  return (
+    return (
     <div className={`fixed top-0 left-0 w-full h-full ${isDark ? "bg-gray-900" : "bg-gray-100"} bg-opacity-50 flex justify-center items-center`}>
       <div className={`p-8 rounded-md w-full max-w-md ${isDark ? "bg-sky-950" : "bg-white"}`}>
         <h2 className={`text-2xl mb-4 ${isDark ? "text-neutral-100" : "text-gray-900"}`}>Contact Me</h2>
