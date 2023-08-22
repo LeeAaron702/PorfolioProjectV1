@@ -7,7 +7,7 @@ const sendToDiscord = async (req: VercelRequest, res: VercelResponse) => {
     return res.status(405).end();
   }
 
-  const { name, email, message } = req.body;
+  const { name, phone, email, message } = req.body;
 
   const DISCORD_WEBHOOK_URL = process.env.DISCORD_WEBHOOK_URL;
 
@@ -18,8 +18,8 @@ const sendToDiscord = async (req: VercelRequest, res: VercelResponse) => {
 
   try {
     await axios.post(DISCORD_WEBHOOK_URL, {
-      content: `**New Contact Form Submission**\n\n**Name:** ${name}\n**Email:** ${email}\n\n**Message:**\n${message}`
-    });
+        content: `**New Contact Form Submission**\n\n**Name:** ${name}\n**Phone:** ${phone}\n**Email:** ${email}\n\n**Message:**\n${message}`
+      });
 
     res.status(200).send('Message sent to Discord successfully');
   } catch (error) {

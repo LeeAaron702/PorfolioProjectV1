@@ -19,11 +19,11 @@ const ContactModal: React.FC<Props> = ({ closeModal }) => {
     // Gather form data
     const formData = {
       name: (form.elements.namedItem("name") as HTMLInputElement).value,
+      phone: (form.elements.namedItem("phone") as HTMLInputElement).value, // Add this line
       email: (form.elements.namedItem("email") as HTMLInputElement).value,
       message: (form.elements.namedItem("message") as HTMLTextAreaElement)
         .value,
     };
-
     // Send data to Vercel serverless function
     try {
       const response = await fetch("/api/sendToDiscord", {
@@ -118,6 +118,32 @@ const ContactModal: React.FC<Props> = ({ closeModal }) => {
               }`}
               required
             />
+          </div>
+
+          <div className="mb-4">
+            <label
+              className={`block text-sm font-bold mb-2 ${
+                isDark ? "text-neutral-100" : "text-gray-900"
+              }`}
+              htmlFor="phone"
+            >
+              Phone Number
+            </label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              className={`shadow appearance-none border rounded w-full py-2 px-3 ${
+                isDark
+                  ? "text-neutral-100 bg-sky-850"
+                  : "text-gray-900 bg-white"
+              }`}
+              required
+            />
+            <small className="text-xs text-gray-500">
+              Format: 123-456-7890
+            </small>
           </div>
 
           <div className="mb-4">
