@@ -47,7 +47,7 @@ const AboutSection = () => {
             <br />
             <p>
               After completing an Advanced Software Engineering Certificate at
-              Hack Reactor, eading development teams became second nature,
+              Hack Reactor, leading development teams became second nature,
               especially when it came to creating user-centric applications and
               enhancing application performance.
             </p>
