@@ -56,6 +56,8 @@ const HeroSection = () => {
           <HiArrowDown size={35} className="animate-bounce" />
         </Link>
         </div>
+        {modalOpen && <ContactModal closeModal={() => setModalOpen(false)} />}
+
     </section>
   )
 }
