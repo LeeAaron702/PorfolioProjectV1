@@ -1,4 +1,5 @@
-import React from "react"
+"Use client"
+import React { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import SlideUp from "./SlideUp"
@@ -74,7 +75,7 @@ const ProjectsSection = () => {
       }
   };
 
-  
+
     return (
     <section id="projects">
       <h1 className="my-10 text-center font-bold text-4xl">
