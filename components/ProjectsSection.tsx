@@ -7,6 +7,14 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
 
 const projects = [
 
+  // {
+  //   name: "Daedalus AI SaaS Platform",
+  //   description:
+  //     "Daedalus is a SaaS platform that harnesses the power of Prompt Engineering, Open AI, and Replicate to provide everyone with tailored AI solutions for workflow automation, data analysis, and content generation",
+  //   image: "/LiLL-E.gif",
+  //   github: "https://github.com/LeeAaron702/LiLL-E_ImageGenerator",
+  //   link: "https://lill-e.tech/",
+  // },
   {
     name: "LiLL-E Image Generator",
     description:
