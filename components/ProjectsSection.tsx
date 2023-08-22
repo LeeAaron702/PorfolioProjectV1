@@ -82,13 +82,19 @@ const ProjectsSection = () => {
         Projects
         <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
       </h1>
+      <p className="my-10 text-center font-bold text-2xl">
+        Please click to expand!
+      </p>
+      <p className="text-center text-sm">
+        Please give GIFs a moment to load.
+      </p>
 
       <div className="flex flex-col space-y-28">
         {projects.map((project, idx) => (
           <div key={idx}>
             <SlideUp offset="-300px 0px -300px 0px">
               <h1
-                className="text-4xl font-bold mb-6 cursor-pointer"
+                className="text-4xl text-center font-bold mb-6 cursor-pointer"
                 onClick={() => toggleProject(idx)}
               >
                 {project.name}
