@@ -1,12 +1,11 @@
-"use client"
+"use client";
 import React, { useState } from "react";
-import Image from "next/image"
-import Link from "next/link"
-import SlideUp from "./SlideUp"
-import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
+import Image from "next/image";
+import Link from "next/link";
+import SlideUp from "./SlideUp";
+import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 
 const projects = [
-
   {
     name: "LiLL-E Image Generator",
     description:
@@ -49,7 +48,8 @@ const projects = [
   },
   {
     name: "Cruise Control",
-    description: "Cruise Control is a cutting-edge software solution designed for the vehicle service industry. It streamlines appointment scheduling, service, and technician management.",
+    description:
+      "Cruise Control is a cutting-edge software solution designed for the vehicle service industry. It streamlines appointment scheduling, service, and technician management.",
     image: "/CruiseControl.gif",
     github: "https://github.com/LeeAaron702/CruiseControl",
     link: "https://github.com/LeeAaron702/CruiseControl",
@@ -62,10 +62,9 @@ const projects = [
     github: "https://github.com/LeeAaron702/CarCar",
     link: "https://github.com/LeeAaron702/CarCar",
   },
-]
+];
 
 const ProjectsSection = () => {
-
   const [expandedProject, setExpandedProject] = useState<number | null>(null);
 
   const toggleProject = (idx: number) => {
@@ -94,6 +93,7 @@ const ProjectsSection = () => {
                 >
                   {project.name}
                 </h1>
+
                 {expandedProject === idx && (
                   <>
                     <div className="md:w-1/2">
@@ -107,6 +107,7 @@ const ProjectsSection = () => {
                         />
                       </Link>
                     </div>
+
                     <div className="mt-8 md:w-1/2">
                       <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
                         {project.description}
