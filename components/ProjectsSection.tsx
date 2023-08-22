@@ -64,7 +64,18 @@ const projects = [
 ]
 
 const ProjectsSection = () => {
-  return (
+  const [expandedProject, setExpandedProject] = useState<number | null>(null);
+
+  const toggleProject = (idx: number) => {
+      if (expandedProject === idx) {
+          setExpandedProject(null);
+      } else {
+          setExpandedProject(idx);
+      }
+  };
+
+  
+    return (
     <section id="projects">
       <h1 className="my-10 text-center font-bold text-4xl">
         Projects
