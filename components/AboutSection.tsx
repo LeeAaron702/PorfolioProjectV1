@@ -39,16 +39,17 @@ const AboutSection = () => {
             </h1>
             <p>
               Based in Las Vegas, Nevada,{" "}
-              <span className="font-bold">{"determined"}</span>,
-              <span className="font-bold">{" driven"}</span>, and
-              <span className="font-bold">{" adaptable"}</span> full-stack
-              software developer based in Las Vegas, Nevada.
+              <span className="font-bold">{"determination"}</span>,
+              <span className="font-bold">{" drive"}</span>, and
+              <span className="font-bold">{" adaptability"}</span> define my
+              traits as a full-stack software developer.
             </p>
             <br />
             <p>
-              Recently, I completed an Advanced Software Engineering Certificate
-              at Hack Reactor, where I led development teams in creating
-              user-centric applications and optimizing application performance.
+              After completing an Advanced Software Engineering Certificate at
+              Hack Reactor, eading development teams became second nature,
+              especially when it came to creating user-centric applications and
+              enhancing application performance.
             </p>
             <br />
             <p>
