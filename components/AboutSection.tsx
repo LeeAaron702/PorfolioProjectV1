@@ -38,27 +38,25 @@ const AboutSection = () => {
               Get to know me!
             </h1>
             <p>
-              Hi, my name is Lee and I am a{" "}
-              <span className="font-bold">{"determined"}</span>,
-              <span className="font-bold">{" driven"}</span>, and
-              <span className="font-bold">{" adaptable"}</span> full-stack software developer based in Las Vegas, Nevada.
+              Based in Las Vegas, Nevada{", "}
+              <span className="font-bold">{"determination"}</span>,
+              <span className="font-bold">{" drive"}</span>, and
+              <span className="font-bold">{" adaptability "}</span> define my traits as a full-stack software developer.
             </p>
             <br />
             <p>
-            Recently, I completed an Advanced Software Engineering Certificate at Hack Reactor, where I led development teams in creating user-centric applications and optimizing application performance. 
+            After completing an Advanced Software Engineering Certificate at Hack Reactor, eading development teams became second nature, especially when it came to creating user-centric applications and enhancing application performance.
             </p>
             <br />
             <p>
-            Prior to my coding career, I held various managerial positions where I optimized business processes, implemented innovative strategies, and improved customer satisfaction. This business experience coupled with my tech skills allows me to bring a unique perspective to software development.
-            </p>
+            Before embracing the world of coding, various managerial roles were undertaken, optimizing business processes, rolling out innovative strategies, and elevating customer satisfaction. Such a blend of business experience with technical expertise offers a fresh perspective on software development.            </p>
             <br />
             <p>
-              I believe in{" "}
+              Believing in{" "}
               <span className="font-bold text-teal-500">
                 constant growth
               </span>{" "}
-              and I am always excited to tackle new challenges in the technology sphere. I am eager to use my skills to make a significant impact in a forward-thinking company.
-
+              and with an unwavering enthusiasm for new challenges in the tech realm, there's a steadfast commitment to drive innovation and contribute significantly to forward-thinking companies.
             </p>
           </div>
           <div className="text-center md:w-1/2 md:text-left">
