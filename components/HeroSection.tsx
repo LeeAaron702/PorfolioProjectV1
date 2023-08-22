@@ -38,7 +38,7 @@ const HeroSection = () => {
           </Link>  
           <button 
         onClick={() => setModalOpen(true)} 
-        className="text-neutral-100 font-semibold px-6 py-3 bg-purple-600 rounded shadow hover:bg-purple-700">
+        className="text-neutral-100 font-semibold px-6 py-3 bg-purple-600 rounded shadow hover:bg-purple-700 ml-5">
         Contact Me
       </button>   
            </div>
