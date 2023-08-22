@@ -88,26 +88,26 @@ const ProjectsSection = () => {
           <div key={idx}>
             <SlideUp offset="-300px 0px -300px 0px">
               <div className="flex flex-col animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
-                <div className="md:w-1/2">
-                  <Link href={project.link}>
-                    <Image
-                      src={project.image}
-                      alt=""
-                      width={2000}
-                      height={2000}
-                      className="rounded-xl shadow-xl hover:opacity-70"
-                    />
-                  </Link>
-                </div>
-                <div className="mt-8 md:w-1/2">
-                  <h1
-                    className="text-4xl font-bold mb-6 cursor-pointer"
-                    onClick={() => toggleProject(idx)}
-                  >
-                    {project.name}
-                  </h1>
-                  {expandedProject === idx && (
-                    <>
+                <h1
+                  className="text-4xl font-bold mb-6 cursor-pointer w-full text-center"
+                  onClick={() => toggleProject(idx)}
+                >
+                  {project.name}
+                </h1>
+                {expandedProject === idx && (
+                  <>
+                    <div className="md:w-1/2">
+                      <Link href={project.link}>
+                        <Image
+                          src={project.image}
+                          alt=""
+                          width={2000}
+                          height={2000}
+                          className="rounded-xl shadow-xl hover:opacity-70"
+                        />
+                      </Link>
+                    </div>
+                    <div className="mt-8 md:w-1/2">
                       <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
                         {project.description}
                       </p>
@@ -125,9 +125,9 @@ const ProjectsSection = () => {
                           />
                         </Link>
                       </div>
-                    </>
-                  )}
-                </div>
+                    </div>
+                  </>
+                )}
               </div>
             </SlideUp>
           </div>
