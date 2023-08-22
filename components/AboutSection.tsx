@@ -64,11 +64,8 @@ const AboutSection = () => {
               Believing in{" "}
               <span className="font-bold text-teal-500">constant growth</span>{" "}
               and with an unwavering enthusiasm for new challenges in the tech
-              realm, there's a steadfast commitment to drive innovation and
-              contribute significantly to forward-thinking companies.I am always
-              excited to tackle new challenges in the technology sphere. I am
-              eager to use my skills to make a significant impact in a
-              forward-thinking company.
+              realm, there is a steadfast commitment to drive innovation and
+              contribute significantly to forward-thinking companies.
             </p>
           </div>
           <div className="text-center md:w-1/2 md:text-left">
