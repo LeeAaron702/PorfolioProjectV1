@@ -66,9 +66,9 @@ const projects = [
 
 const ProjectsSection = () => {
 
-  const [expandedProject, setExpandedProject] = useState(null);
+  const [expandedProject, setExpandedProject] = useState<number | null>(null);
 
-  const toggleProject = (idx) => {
+  const toggleProject = (idx: number) => {
     if (expandedProject === idx) {
       setExpandedProject(null);
     } else {
