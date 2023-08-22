@@ -11,6 +11,11 @@ const sendToDiscord = async (req: VercelRequest, res: VercelResponse) => {
 
   const DISCORD_WEBHOOK_URL = process.env.DISCORD_WEBHOOK_URL;
 
+  if (!DISCORD_WEBHOOK_URL) {
+    console.error('DISCORD_WEBHOOK_URL is not set');
+    return res.status(500).send('Server configuration error');
+  }
+
   try {
     await axios.post(DISCORD_WEBHOOK_URL, {
       content: `**New Contact Form Submission**\n\n**Name:** ${name}\n**Email:** ${email}\n\n**Message:**\n${message}`
