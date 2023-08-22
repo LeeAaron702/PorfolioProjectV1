@@ -1,11 +1,11 @@
-"use client";
-import React, { useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
-import SlideUp from "./SlideUp";
-import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
+import React from "react"
+import Image from "next/image"
+import Link from "next/link"
+import SlideUp from "./SlideUp"
+import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
 
 const projects = [
+
   {
     name: "LiLL-E Image Generator",
     description:
@@ -48,8 +48,7 @@ const projects = [
   },
   {
     name: "Cruise Control",
-    description:
-      "Cruise Control is a cutting-edge software solution designed for the vehicle service industry. It streamlines appointment scheduling, service, and technician management.",
+    description: "Cruise Control is a cutting-edge software solution designed for the vehicle service industry. It streamlines appointment scheduling, service, and technician management.",
     image: "/CruiseControl.gif",
     github: "https://github.com/LeeAaron702/CruiseControl",
     link: "https://github.com/LeeAaron702/CruiseControl",
@@ -62,19 +61,9 @@ const projects = [
     github: "https://github.com/LeeAaron702/CarCar",
     link: "https://github.com/LeeAaron702/CarCar",
   },
-];
+]
 
 const ProjectsSection = () => {
-  const [expandedProject, setExpandedProject] = useState<number | null>(null);
-
-  const toggleProject = (idx: number) => {
-    if (expandedProject === idx) {
-      setExpandedProject(null);
-    } else {
-      setExpandedProject(idx);
-    }
-  };
-
   return (
     <section id="projects">
       <h1 className="my-10 text-center font-bold text-4xl">
@@ -86,56 +75,52 @@ const ProjectsSection = () => {
         {projects.map((project, idx) => (
           <div key={idx}>
             <SlideUp offset="-300px 0px -300px 0px">
-              <div className="flex flex-col animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
-                <h1
-                  className="text-4xl font-bold mb-6 cursor-pointer w-full text-center"
-                  onClick={() => toggleProject(idx)}
-                >
-                  {project.name}
-                </h1>
-
-                {expandedProject === idx && (
-                  <>
-                    <div className="md:w-1/2">
-                      <Link href={project.link}>
-                        <Image
-                          src={project.image}
-                          alt=""
-                          width={2000}
-                          height={2000}
-                          className="rounded-xl shadow-xl hover:opacity-70"
+              <h1
+                className="text-4xl font-bold mb-6 cursor-pointer"
+                onClick={() => toggleProject(idx)}
+              >
+                {project.name}
+              </h1>
+              {expandedProject === idx && (
+                <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
+                  <div className=" md:w-1/2">
+                    <Link href={project.link}>
+                      <Image
+                        src={project.image}
+                        alt=""
+                        width={2000}
+                        height={2000}
+                        className="rounded-xl shadow-xl hover:opacity-70"
+                      />
+                    </Link>
+                  </div>
+                  <div className="mt-8 md:w-1/2">
+                    <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
+                      {project.description}
+                    </p>
+                    <div className="flex flex-row align-bottom space-x-4">
+                      <Link href={project.github} target="_blank">
+                        <BsGithub
+                          size={30}
+                          className="hover:-translate-y-1 transition-transform cursor-pointer"
+                        />
+                      </Link>
+                      <Link href={project.link} target="_blank">
+                        <BsArrowUpRightSquare
+                          size={30}
+                          className="hover:-translate-y-1 transition-transform cursor-pointer"
                         />
                       </Link>
                     </div>
-
-                    <div className="mt-8 md:w-1/2">
-                      <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
-                        {project.description}
-                      </p>
-                      <div className="flex flex-row align-bottom space-x-4">
-                        <Link href={project.github} target="_blank">
-                          <BsGithub
-                            size={30}
-                            className="hover:-translate-y-1 transition-transform cursor-pointer"
-                          />
-                        </Link>
-                        <Link href={project.link} target="_blank">
-                          <BsArrowUpRightSquare
-                            size={30}
-                            className="hover:-translate-y-1 transition-transform cursor-pointer"
-                          />
-                        </Link>
-                      </div>
-                    </div>
-                  </>
-                )}
-              </div>
+                  </div>
+                </div>
+              )}
             </SlideUp>
           </div>
         ))}
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default ProjectsSection;
+export default ProjectsSection
