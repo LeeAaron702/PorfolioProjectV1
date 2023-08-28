@@ -26,51 +26,46 @@ const skills = [
 const AboutSection = () => {
   return (
     <section id="about">
-      <div className="my-12 pb-12 md:pt-16 md:pb-24">
-        <h1 className="text-center font-bold text-4xl">
+      <div className="my-3 pb-12 md:pt-16 md:pb-24">
+        <h1 className="text-center font-bold text-5xl">
           About Me
           <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
         </h1>
 
         <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left">
           <div className="md:w-1/2 ">
-            <h1 className="text-center text-2xl font-bold mb-6 md:text-left">
+            <h1 className="text-center text-4xl font-bold mb-6 md:text-center">
               Get to know me!
             </h1>
-            <p>
-              Based in Las Vegas, Nevada,{" "}
-              <span className="font-bold">{"determination"}</span>,
-              <span className="font-bold">{" drive"}</span>, and
-              <span className="font-bold">{" adaptability"}</span> define my
-              traits as a full-stack software developer.
-            </p>
-            <br />
-            <p>
-              After completing an Advanced Software Engineering Certificate at
-              Hack Reactor, leading development teams became second nature,
-              especially when it came to creating user-centric applications and
-              enhancing application performance.
-            </p>
-            <br />
-            <p>
-              Before embracing the world of coding, various managerial roles
-              were undertaken, optimizing business processes, rolling out
-              innovative strategies, and elevating customer satisfaction. Such a
-              blend of business experience with technical expertise offers a
-              fresh perspective on software development.
-            </p>
-            <br />
-            <p>
-              Believing in{" "}
-              <span className="font-bold text-teal-500">constant growth</span>{" "}
-              and with an unwavering enthusiasm for new challenges in the tech
-              realm, there is a steadfast commitment to drive innovation and
-              contribute significantly to forward-thinking companies.
-            </p>
+            <ul className="text-center text-2xl list-disc list-inside mb-6 space-y-10">
+              <li className="mb-4">
+                <span className="text-2xl font-bold">
+                  Digitally Driven Entrepreneur:
+                </span>{" "}
+                Merging the art of digital creation with entrepreneurial zeal.
+              </li>
+              <li className="mb-4">
+                <span className="font-bold">Craftsmanship Enthusiast:</span>{" "}
+                Passion for tangible creations, coding, and engaging in outdoor
+                activities.
+              </li>
+              <li className="mb-4">
+                <span className="font-bold">Management Expertise:</span> Skills
+                in optimizing processes, strategizing, and elevating customer
+                satisfaction.
+              </li>
+              <li className="mb-4">
+                <span className="font-bold">
+                  Commitment to Growth:
+                </span>{" "}
+                Focused on efficiency, innovation, and contributing to
+                forward-thinking companies.
+              </li>
+            </ul>
           </div>
           <div className="text-center md:w-1/2 md:text-left">
-            <h1 className="text-2xl font-bold mb-6">My Skills</h1>
-            <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start">
+            <h1 className="text-4xl font-bold mb-6 text-center">My Skills</h1>
+            <div className="flex flex-wrap flex-row justify-center z-10 md:justify-center">
               {skills.map((item, idx) => {
                 return (
                   <p
